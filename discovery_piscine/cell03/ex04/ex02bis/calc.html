@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องคิดเลข</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calc.js"></script>
+</head>
+<body>
+    <h2>เครื่องคิดเลข</h2>
+    <form id="calculator">
+        <input type="text" id="leftInput" pattern="[0-9]" required>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="rightInput" pattern="[0-9]" required>
+    </form>
+    <div class="btn">
+        <button id="calculateButton" style="width: fit-content;" class="btn">Try me</button>
+    </div>
+</body>
+</html>

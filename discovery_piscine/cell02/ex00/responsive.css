@@ -1,0 +1,7 @@
+.x{
+    flex: 1; background-color: cyan; height: 250px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    
+}

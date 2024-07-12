@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    width: 100%;
+    height: 200vh;
+    background-color: #001E1E;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001E1E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.about {
+    display: flex;
+
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.about img {
+    width: 400px;
+    height: auto;
+    
+    justify-self: end;
+    align-self: center;
+    margin-right: 30px;
+    margin-Left: 30px;
+
+    border-radius: 50px;
+    background: #00312F;
+    box-shadow:  29px 29px 53px #002422,
+                 -29px -29px 53px #003e3c;
+}
+
+.about .text-about {
+    display: flex;
+    flex-direction: column;
+    /* Allows vertical alignment adjustments */
+    align-items: flex-end;
+    /* Aligns items to the top */
+    justify-content: flex-start;
+    /* Aligns items to the left */
+    width: 40%;
+
+    padding: 20px;
+    /* Optional: Adds some padding for better visual spacing */
+}
+
+.about .text-about h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: Muli, sans-serif;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-top: 80px;
+    /* Ensures no extra margin around the h1 */
+}
+
+.about .text-about h2 {
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: Muli, sans-serif;
+    unicode-bidi: isolate;
+    margin-left: 1vw;
+    /* Ensures no extra margin around the h1 */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    
+    height: 40vh;
+}
+
+.skill h1{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: Muli, sans-serif;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-left: 8vw;
+    margin-top: 65px;
+}
+
+.skill img {
+    width: 10%;
+    height: auto;
+ }
+ .skill-box{
+    display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     width: 100%;
+     height: 10vh;
+     margin-top: 50px;
+     margin-left: 8vw;
+ }
+ .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    height: 60vh;
+}
+.contact h1{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: Muli, sans-serif;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-left: 8vw;
+    margin-top: 65px;
+}
+.contact img {
+    width: 50%;
+    height: auto;
+ }
+
+
+ .contact-box{
+    display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     width: 100%;
+     height: 10vh;
+     margin-top: 50px;
+     margin-left: 8vw;
+
+ }
+ .contact-box a{
+ 
+    width: 10%;
+    height: auto;
+    margin: 1vw;
+ }
+
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .about img {
+        height: auto;
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    .about .text-about {
+        width: 60%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about .text-about h1 {
+        font-size: 4vw;
+    }
+    .skill{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill h1 {
+        font-size: 4vw;
+        margin: 0;
+        
+    }
+
+
+    .about .text-about h2 {
+        font-size: 2vw;
+    }
+    .skill-box{
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact h1 {
+        font-size: 4vw;
+        margin: 0;
+        margin-left: 0px;
+    }
+    .contact-box{
+        margin-top: 20px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .contact-box a{
+        justify-content: center;
+     }
+}
+
+@media (max-width: 480px) {
+    .about img {
+        width: 60%;
+    }
+
+    .about .text-about {
+        width: 90%;
+    }
+
+    .about .text-about h1 {
+        font-size: 4vw;
+    }
+
+    .about .text-about h2 {
+        font-size: 2vw;
+    }
+    .contact img {
+        width: 70%;
+        height: auto;
+     }
+}
